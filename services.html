@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UGo Greentech Services — Auditing, Building Performance, Green Certification (GRIHA, IGBC, LEED, EDGE, WELL, CPWD GHAR), Sustainability Reporting.">
+  <title>Services | UGo Greentech Solutions Pvt. Ltd.</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/shared-page.css">
+  
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+<div class="page-loader" id="page-loader">
+  <img src="images/logo.png" alt="UGo Greentech" class="loader-logo-img">
+  <div class="loader-bar-outer"><div class="loader-bar-inner"></div></div>
+  <div class="loader-text">Building Sustainable Futures</div>
+</div>
+<canvas id="particles-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="UGo Greentech Solutions" class="logo-img">
+    <div><span class="logo-name">UGo Greentech Solutions</span><span class="logo-tagline">Private Limited</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <div class="nav-item-dropdown">
+      <a href="services.html" class="active">Services ▾</a>
+      <div class="dropdown-mega">
+        <div class="dropdown-col"><h4>Auditing</h4>
+          <a href="services/Energy_Audit_Services.html">Energy Audit</a>
+          <a href="services/Indoor_Environmental_Quality_IEQ_Audit.html">IEQ Audit</a>
+          <a href="services/Waste_Management_Solutions.html">Waste Management</a>
+          <a href="services/Water_Audit_Services.html">Water Audit</a>
+        </div>
+        <div class="dropdown-col"><h4>Building Performance</h4>
+          <a href="services/Energy_Modelling.html">Energy Modelling</a>
+          <a href="services/Daylight_Simulation.html">Daylight Simulation</a>
+          <a href="services/CFD_Simulation.html">CFD Simulation</a>
+          <a href="services/ECBC_Compliance.html">ECBC Compliance</a>
+          <a href="services/Microclimatic_Analysis.html">Microclimatic Analysis</a>
+          <a href="services/Artificial_Lighting_Simulation.html">Artificial Lighting</a>
+          <a href="services/Urban_Heat_Island_Analysis.html">Urban Heat Island</a>
+          <a href="services/International_Code_Compliance.html">International Codes</a>
+        </div>
+        <div class="dropdown-col"><h4>Green Certification</h4>
+          <a href="services/GRIHA_Certification_Services.html">GRIHA</a>
+          <a href="services/IGBC_Certification_Services.html">IGBC</a>
+          <a href="services/ASSOCHAM_GEM_Certification_Services.html">ASSOCHAM GEM</a>
+          <a href="services/EDGE_Certification_Services.html">EDGE</a>
+          <a href="services/LEED_Certification_Services.html">LEED</a>
+          <a href="services/WELL_Certification_Services.html">WELL</a>
+          <a href="services/CPWD_GHAR_Certification_Services.html">CPWD GHAR</a>
+          <a href="services/Green_Product_Certification.html">Green Product Cert.</a>
+          <h4 style="margin-top:14px">Sustainability</h4>
+          <a href="services/Carbon_Footprinting_Services.html">Carbon Footprinting</a>
+        </div>
+      </div>
+    </div>
+    <a href="projects.html">Projects</a>
+    <a href="career.html">Career</a>
+    <a href="contact.html" class="btn-nav-cta">Contact Us</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about-us.html">About Us</a>
+  <button class="mobile-accordion-btn">Services <span class="icon">▾</span></button>
+  <div class="mobile-accordion-body">
+    <a href="services.html">All Services</a>
+    <a href="services/GRIHA_Certification_Services.html">GRIHA Certification</a>
+    <a href="services/IGBC_Certification_Services.html">IGBC Certification</a>
+    <a href="services/Energy_Audit_Services.html">Energy Audit</a>
+    <a href="services/Energy_Modelling.html">Energy Modelling</a>
+  </div>
+  <a href="projects.html">Projects</a>
+  <a href="career.html">Career</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content reveal">
+    <div class="page-badge">🔬 Our Services</div>
+    <h1>End-to-End <span class="gradient-text">Sustainability</span> Consultancy</h1>
+    <p>Auditing · Building Performance Simulations · Green Certification · Sustainability Reporting — comprehensive expertise across every dimension of sustainable development.</p>
+  </div>
+</section>
+
+<div class="expertise-layout">
+  <nav class="exp-sidebar">
+    <div class="sidebar-hdr">Service Categories</div>
+    <button class="sidebar-btn active" data-panel="auditing"><span class="sb-icon">🔍</span><span>Auditing Services</span><span class="sb-arr">→</span></button>
+    <button class="sidebar-btn" data-panel="performance"><span class="sb-icon">📊</span><span>Building Performance</span><span class="sb-arr">→</span></button>
+    <button class="sidebar-btn" data-panel="certification"><span class="sb-icon">🏆</span><span>Green Certification</span><span class="sb-arr">→</span></button>
+    <button class="sidebar-btn" data-panel="reporting"><span class="sb-icon">🌱</span><span>Sustainability Reporting</span><span class="sb-arr">→</span></button>
+  </nav>
+  <div class="exp-content">
+    <div class="exp-panel active" id="panel-auditing">
+      <div class="panel-hdr"><div class="panel-icon">🔍</div><div class="panel-hdr-txt"><h2>Auditing Services</h2><p>Comprehensive building audits identifying energy consumption, indoor environment quality, water use, and waste management opportunities.</p></div></div>
+      <div class="svc-mini-grid">
+        <a href="services/Energy_Audit_Services.html" class="svc-mini"><div class="svm-icon">⚡</div><div class="svm-title">Energy Audit Services</div><div class="svm-desc">Detailed energy audits identifying inefficiencies and providing actionable recommendations to reduce energy use and lower operational costs.</div><div class="svm-arr">→</div></a>
+        <a href="services/Indoor_Environmental_Quality_IEQ_Audit.html" class="svc-mini"><div class="svm-icon">🌬️</div><div class="svm-title">IEQ Audit</div><div class="svm-desc">Assessment of air quality, ventilation, thermal comfort, daylight levels, and noise conditions to create safe, healthy indoor environments.</div><div class="svm-arr">→</div></a>
+        <a href="services/Waste_Management_Solutions.html" class="svc-mini"><div class="svm-icon">♻️</div><div class="svm-title">Waste Management Solutions</div><div class="svm-desc">Structured waste management systems including segregation planning, recycling strategies, and landfill reduction methods.</div><div class="svm-arr">→</div></a>
+        <a href="services/Water_Audit_Services.html" class="svc-mini"><div class="svm-icon">💧</div><div class="svm-title">Water Audit Services</div><div class="svm-desc">Analysis of water consumption patterns across building systems to identify wastage and provide conservation strategies.</div><div class="svm-arr">→</div></a>
+      </div>
+    </div>
+    <div class="exp-panel" id="panel-performance">
+      <div class="panel-hdr"><div class="panel-icon">📊</div><div class="panel-hdr-txt"><h2>Building Performance Services</h2><p>Advanced simulation and analysis to optimise energy efficiency, visual comfort, thermal comfort, ventilation, and regulatory compliance.</p></div></div>
+      <div class="svc-mini-grid">
+        <a href="services/Energy_Modelling.html" class="svc-mini"><div class="svm-icon">🏢</div><div class="svm-title">Energy Modelling</div><div class="svm-desc">Advanced building energy modelling to optimise energy efficiency and achieve green building certification requirements.<span class="svm-sw">Software: eQUEST</span></div><div class="svm-arr">→</div></a>
+        <a href="services/Daylight_Simulation.html" class="svc-mini"><div class="svm-icon">☀️</div><div class="svm-title">Daylight Simulation</div><div class="svm-desc">Comprehensive daylight simulation to enhance visual comfort and reduce artificial lighting demand.<span class="svm-sw">Software: Ecotect, LightStanza</span></div><div class="svm-arr">→</div></a>
+        <a href="services/Thermal_Comfort_Simulation.html" class="svc-mini"><div class="svm-icon">🌡️</div><div class="svm-title">Thermal Comfort Simulation</div><div class="svm-desc">Advanced thermal comfort analysis evaluating indoor environmental conditions to ensure occupant comfort.</div><div class="svm-arr">→</div></a>
+        <a href="services/CFD_Simulation.html" class="svc-mini"><div class="svm-icon">🌀</div><div class="svm-title">CFD Simulation</div><div class="svm-desc">Computational Fluid Dynamics simulation analysing airflow, ventilation performance, and thermal distribution.<span class="svm-sw">Software: Autodesk CFD</span></div><div class="svm-arr">→</div></a>
+        <a href="services/ECBC_Compliance.html" class="svc-mini"><div class="svm-icon">📋</div><div class="svm-title">ECBC Compliance</div><div class="svm-desc">Comprehensive ECBC compliance ensuring buildings meet mandatory energy efficiency standards.<span class="svm-sw">Software: eQUEST</span></div><div class="svm-arr">→</div></a>
+        <a href="services/Microclimatic_Analysis.html" class="svc-mini"><div class="svm-icon">🌦️</div><div class="svm-title">Microclimatic Analysis</div><div class="svm-desc">Site-specific microclimate evaluation including wind patterns, solar exposure, UHI effects, and shading analysis.<span class="svm-sw">Software: Autodesk CFD, Ecotect, ENVI-met</span></div><div class="svm-arr">→</div></a>
+        <a href="services/Artificial_Lighting_Simulation.html" class="svc-mini"><div class="svm-icon">💡</div><div class="svm-title">Artificial Lighting Simulation</div><div class="svm-desc">Advanced photometric analysis optimising indoor lighting performance, illumination levels, and energy efficiency.<span class="svm-sw">Software: DIALux</span></div><div class="svm-arr">→</div></a>
+        <a href="services/Urban_Heat_Island_Analysis.html" class="svc-mini"><div class="svm-icon">🏙️</div><div class="svm-title">Urban Heat Island Analysis</div><div class="svm-desc">Comprehensive UHI analysis assessing and mitigating rising urban temperatures caused by built density.<span class="svm-sw">Software: ENVI-met</span></div><div class="svm-arr">→</div></a>
+        <a href="services/International_Code_Compliance.html" class="svc-mini"><div class="svm-icon">🌐</div><div class="svm-title">International Code Compliances</div><div class="svm-desc">Ensuring projects meet globally recognised building standards, sustainability frameworks, and regulatory requirements.</div><div class="svm-arr">→</div></a>
+      </div>
+    </div>
+    <div class="exp-panel" id="panel-certification">
+      <div class="panel-hdr"><div class="panel-icon">🏆</div><div class="panel-hdr-txt"><h2>Green Certification</h2><p>End-to-end green building certification support across all major Indian and international rating systems.</p></div></div>
+      <div class="cert-org-row">
+        <div class="cert-org-pill"><span>🌿</span> GRIHA Council</div>
+        <div class="cert-org-pill"><span>💚</span> IGBC / CII</div>
+        <div class="cert-org-pill"><span>🏆</span> USGBC / LEED</div>
+        <div class="cert-org-pill"><span>⚡</span> IFC EDGE</div>
+        <div class="cert-org-pill"><span>💎</span> IWBI WELL</div>
+        <div class="cert-org-pill"><span>🏛️</span> CPWD GHAR</div>
+        <div class="cert-org-pill"><span>🌐</span> ASSOCHAM GEM</div>
+        <div class="cert-org-pill"><span>♻️</span> CII Green Pro</div>
+      </div>
+      <div class="svc-mini-grid">
+        <a href="services/GRIHA_Certification_Services.html" class="svc-mini svc-mini-feat"><div class="svm-icon">🌿</div><div class="svm-title">GRIHA Certification</div><div class="svm-desc">India's national green building rating system. We are <strong>3-time GRIHA Council Award Winners</strong> with GRIHA CP and GRIHA Evaluator credentials. 500+ registered projects.</div><div class="svm-arr">→</div></a>
+        <a href="services/IGBC_Certification_Services.html" class="svc-mini"><div class="svm-icon">💚</div><div class="svm-title">IGBC Certification</div><div class="svm-desc">End-to-end IGBC certification covering Green Buildings, Green Homes, Green Interiors, Affordable Housing. IGBC AP certified professionals.</div><div class="svm-arr">→</div></a>
+        <a href="services/ASSOCHAM_GEM_Certification_Services.html" class="svc-mini"><div class="svm-icon">🏅</div><div class="svm-title">ASSOCHAM GEM</div><div class="svm-desc">ASSOCHAM GEM (Green &amp; Eco-Friendly Movement) certification from planning to final rating — integrating sustainability principles across all project stages.</div><div class="svm-arr">→</div></a>
+        <a href="services/EDGE_Certification_Services.html" class="svc-mini"><div class="svm-icon">⚡</div><div class="svm-title">EDGE Certification</div><div class="svm-desc">IFC EDGE certification ensuring 20%+ savings across energy, water, and embodied energy. Cost-effective for residential and commercial projects.</div><div class="svm-arr">→</div></a>
+        <a href="services/LEED_Certification_Services.html" class="svc-mini"><div class="svm-icon">🏆</div><div class="svm-title">LEED Certification</div><div class="svm-desc">LEED (Leadership in Energy and Environmental Design) — globally recognised rating by USGBC. End-to-end support across BD+C, ID+C, and O+M tracks.</div><div class="svm-arr">→</div></a>
+        <a href="services/WELL_Certification_Services.html" class="svc-mini"><div class="svm-icon">💎</div><div class="svm-title">WELL Certification</div><div class="svm-desc">WELL Building Standard focused on human health and wellbeing — 10 WELL concepts integrated from early design through performance verification.</div><div class="svm-arr">→</div></a>
+        <a href="services/CPWD_GHAR_Certification_Services.html" class="svc-mini"><div class="svm-icon">🏛️</div><div class="svm-title">CPWD GHAR</div><div class="svm-desc">Green Habitat Accompanied Rating — the green building system for Indian government projects. Full support from pre-assessment through final certification.</div><div class="svm-arr">→</div></a>
+        <a href="services/Green_Product_Certification.html" class="svc-mini"><div class="svm-icon">♻️</div><div class="svm-title">Green Product Certification</div><div class="svm-desc">Green product certification and accreditation under GRIHA product certification, CII Green Pro, and Environmental Product Declarations (EPD).</div><div class="svm-arr">→</div></a>
+      </div>
+    </div>
+    <div class="exp-panel" id="panel-reporting">
+      <div class="panel-hdr"><div class="panel-icon">🌱</div><div class="panel-hdr-txt"><h2>Sustainability Reporting</h2><p>Credible, globally recognised sustainability measurement and reporting — helping organisations understand, disclose, and reduce their environmental footprint.</p></div></div>
+      <div class="svc-mini-grid">
+        <a href="services/Carbon_Footprinting_Services.html" class="svc-mini svc-mini-feat"><div class="svm-icon">🌱</div><div class="svm-title">Carbon Footprinting Services</div><div class="svm-desc">Carbon Footprint Reporting measuring, calculating, and disclosing total GHG emissions — Scope 1, 2, and 3 — using GHG Protocol standards for accuracy, consistency, and transparency.</div><div class="svm-arr">→</div></a>
+      </div>
+      <div class="glass-card" style="margin-top:24px;padding:24px">
+        <h3 style="font-family:var(--font-display);margin-bottom:12px">Standards We Follow</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:9px">
+          <div class="cert-org-pill">📋 GHG Protocol</div>
+          <div class="cert-org-pill">🌍 ISO 14064</div>
+          <div class="cert-org-pill">📊 CDP Framework</div>
+          <div class="cert-org-pill">⚖️ IPCC Guidelines</div>
+          <div class="cert-org-pill">🇮🇳 MoEFCC Guidelines</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="cta-banner"><div class="cta-banner-bg"></div><div class="cta-banner-glow"></div>
+<div class="container cta-content reveal">
+  <div class="cta-icon">🌿</div>
+  <h2 class="cta-title">Need a <span class="gradient-text">Sustainability Solution?</span></h2>
+  <p class="cta-desc">Talk to our certified team — we'll recommend the most appropriate services and rating systems for your project typology, stage, and sustainability goals.</p>
+  <div class="cta-buttons"><a href="contact.html" class="btn btn-primary">Get a Free Consultation →</a><a href="tel:+918527532970" class="btn btn-ghost">📞 +91 85275 32970</a></div>
+</div>
+</section>
+
+  <!-- footer -->
+
+    
+<footer class="ugo-footer">
+
+    <!-- BACKGROUND IMAGE -->
+    <img src="./images/galaxy=001.png" alt="" class="footer-bg">
+
+    <!-- OVERLAY -->
+    <div class="footer-overlay"></div>
+
+    <!-- GLOW -->
+    <div class="footer-glow"></div>
+
+    <!-- PARTICLES -->
+    <div id="particles"></div>
+
+    <!-- MAIN -->
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <img src="./images/logo.png"
+            alt=""
+            class="footer-logo">
+
+          
+
+            <h2>
+                UGO GREENTECH
+                SOLUTIONS PRIVATE LIMITED
+            </h2>
+
+            <p>
+                India's award-winning green building and sustainability consultancy delivering
+                certifications, audits, simulations and eco-friendly infrastructure solutions
+                across India and internationally.
+            </p>
+
+
+            <div class="footer-social">
+
+                <a href="#">in</a>
+                <a href="#">📷</a>
+                <a href="#">💬</a>
+                <a href="#">▶</a>
+
+            </div>
+
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-col">
+
+            <h3>Quick Links</h3>
+
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <div class="footer-col">
+
+            <h3>Certifications</h3>
+
+            <ul class="footer-links">
+                <li><a href="#">GRIHA</a></li>
+                <li><a href="#">IGBC</a></li>
+                <li><a href="#">LEED</a></li>
+                <li><a href="#">EDGE</a></li>
+                <li><a href="#">WELL</a></li>
+                <li><a href="#">CPWD GHAR</a></li>
+            </ul>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+
+            <h3>Contact Info</h3>
+
+            <div class="contact-box">
+                <div class="contact-icon">📞</div>
+                <a href="tel:+918527532970">
+                    +91 85275 32970
+                </a>
+            </div>
+
+            <div class="contact-box">
+                <div class="contact-icon">✉️</div>
+                <a href="mailto:udit.gaurav@ugogreen.co.in">
+                    udit.gaurav@ugogreen.co.in
+                </a>
+            </div>
+
+            <div class="contact-box">
+                <div class="contact-icon">📍</div>
+                <p>
+                    18th Floor, Galaxy Blue Sapphire Plaza,
+                    Greater Noida, Uttar Pradesh 201318
+                </p>
+            </div>
+
+            
+
+             </div>
+
+        
+        
+
+    </div>
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 UGO GREENTECH SOLUTIONS PRIVATE LIMITED.
+            All Rights Reserved.
+        </p>
+
+        <div class="bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Sitemap</a>
+        </div>
+
+        <p>
+            Designed with 🌿 for a Greener Planet
+        </p>
+
+    </div>
+
+</footer>
+<a href="https://wa.me/918527532970" class="whatsapp-float" title="WhatsApp" target="_blank" rel="noopener">💬</a>
+<button class="scroll-top" id="scroll-top">↑</button>
+<script src="js/main.js"></script>
+<script>document.querySelectorAll(".sidebar-btn").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".sidebar-btn,.exp-panel").forEach(x=>x.classList.remove("active"));b.classList.add("active");document.getElementById("panel-"+b.dataset.panel).classList.add("active");if(window.innerWidth<900)document.querySelector(".exp-content").scrollIntoView({behavior:"smooth"})}));</script>
+</body>
+</html>
