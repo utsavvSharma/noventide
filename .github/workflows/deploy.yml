@@ -21,4 +21,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
 
           local-dir: ./mspcbdesign/
-          server-dir: /public_html/public/mspcbdesign/
+          server-dir: /public_html/
